@@ -19,13 +19,13 @@ def broken_rope_boat():
     boat = Boat()
     boat.apply_rope_tension(6)
     return boat
-
+# Вперед, назад, влево, вправо можно по сути обьеденить с помощью параметризации(parametrize), чтобы не дублировать код.
 def test_row_forward(boat):
     """Проверка гребли вперед, когда якорь не опущен"""
     result = boat.row("вперед")
     assert result == "Лодка движется вперед"
-
-def test_row_back(boat):
+# 
+def test_row_back(boat): 
     """Проверка гребли назад, когда якорь не опущен"""
     result = boat.row("назад")
     assert result == "Лодка движется назад"
