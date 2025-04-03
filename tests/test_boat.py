@@ -1,6 +1,7 @@
 import pytest
 from boat import Boat
 
+# Фикстуры можно опитимизровать, сделав наследование от boat
 @pytest.fixture
 def boat():
     """Фикстура для создания лодки без якоря"""
